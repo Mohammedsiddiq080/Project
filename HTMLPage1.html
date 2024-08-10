@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polynomial Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-banner">
+            <h2>Welcome to the Polynomial Calculator!</h2>
+            <p>Solve your polynomial equations quickly and easily.</p>
+        </div>
+        <h1>Polynomial Calculator</h1>
+        <form id="polynomialForm">
+            <div class="form-group">
+                <label for="coefficients">Enter coefficients (comma separated):</label>
+                <input type="text" id="coefficients" placeholder="e.g., 1, -3, 2" required>
+            </div>
+            <div class="form-group">
+                <label for="xValue">Enter the value of x:</label>
+                <input type="number" id="xValue" placeholder="e.g., 2" required>
+            </div>
+            <div class="form-group">
+                <label for="yValue">Enter the value of y:</label>
+                <input type="number" id="yValue" placeholder="e.g., 3" required>
+            </div>
+            <div class="form-group">
+                <label for="zValue">Enter the value of z:</label>
+                <input type="number" id="zValue" placeholder="e.g., 4" required>
+            </div>
+            <button type="submit" class="btn">Calculate</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+
+    <!-- About Icon -->
+    <div class="about-icon" id="aboutIcon">i</div>
+
+    <!-- About Modal -->
+    <div class="modal" id="aboutModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>About This Project</h2>
+            <p>This Polynomial Calculator allows you to solve polynomial equations by inputting coefficients and variables (x, y, z). It’s built using the following technologies:</p>
+            <ul>
+                <li><strong>HTML:</strong> Structure and content.</li>
+                <li><strong>CSS:</strong> Styling and layout.</li>
+                <li><strong>JavaScript:</strong> Logic and interactivity.</li>
+            </ul>
+            <p>Created to help users quickly compute polynomial values using multiple variables.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
